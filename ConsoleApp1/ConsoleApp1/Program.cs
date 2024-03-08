@@ -1,16 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-static float countAvg(int[] array)
+static float countMax(int[] array)
 {
     int max = 0;
     if (array != null)
     {
         max = array[0];
-        for (int i = 1; i < array.Length; i++)
+        for (int inna_nazwa = 1; inna_nazwa < array.Length; inna_nazwa++)
         {
-            if (max < array[i])
+            if (max < array[inna_nazwa])
             {
-                max = array[i];
+                max = array[inna_nazwa];
             }
         }
     }
@@ -18,4 +18,4 @@ static float countAvg(int[] array)
     return max;
 } 
 
-Console.WriteLine(countAvg([0,2,3,2]));
+Console.WriteLine(countMax([0,2,3,2]));
