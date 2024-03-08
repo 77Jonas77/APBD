@@ -2,14 +2,20 @@
 
 static float countAvg(int[] array)
 {
-    float suma = 0;
-    for (int i = 0; i < array.Length; i++)
+    int max = 0;
+    if (array != null)
     {
-        suma += array[i];
+        max = array[0];
+        for (int i = 1; i < array.Length; i++)
+        {
+            if (max < array[i])
+            {
+                max = array[i];
+            }
+        }
     }
-    
-    return suma / array.Length;
+
+    return max;
 } 
 
 Console.WriteLine(countAvg([0,2,3,2]));
-  
