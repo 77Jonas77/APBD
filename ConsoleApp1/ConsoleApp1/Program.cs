@@ -1,9 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-void procedure1()
+static float countAvg(int[] array)
 {
-    Console.WriteLine("Siema 3");
-}
+    float suma = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        suma += array[i];
+    }
+    
+    return suma / array.Length;
+} 
 
-procedure1();
-Console.WriteLine("Hello, World 3!");
+Console.WriteLine(countAvg([0,2,3,2]));
+  
