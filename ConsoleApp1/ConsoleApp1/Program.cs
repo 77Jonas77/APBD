@@ -2,8 +2,8 @@
 
 void procedure1()
 {
-    Console.WriteLine("Siema 2");
+    Console.WriteLine("Siema 3");
 }
 
 procedure1();
-Console.WriteLine("Hello, World 2!");
+Console.WriteLine("Hello, World 3!");
