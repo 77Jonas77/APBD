@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-static float countAvg(int[] array)
+static float dej_mnie_max(int[] array)
 {
     int max = 0;
     if (array != null)
@@ -18,4 +18,4 @@ static float countAvg(int[] array)
     return max;
 } 
 
-Console.WriteLine(countAvg([0,2,3,2]));
+Console.WriteLine(dej_mnie_max([0,2,3,2]));
